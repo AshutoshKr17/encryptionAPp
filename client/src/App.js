@@ -47,7 +47,7 @@ function App() {
                 </select>
             </div>
             <div className='flex-parent'>
-                <textarea className='box' onChange={handleInputChange}></textarea>
+                <textarea className='box' onChange={handleInputChange} placeholder="Enter the Json you want to encrypt..."></textarea>
                 <textarea className='box' value={outputText} readOnly></textarea>
             </div>
             <button className='button' onClick={handleSubmit}>RUN</button>
