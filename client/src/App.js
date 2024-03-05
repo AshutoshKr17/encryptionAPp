@@ -19,7 +19,7 @@ function App() {
     axios.defaults.withCredentials = true;
     const handleSubmit = async() => {
         try {
-            const response = await axios.get(`http://localhost:3001/${selectedFunction}`, {
+            const response = await axios.get(`https://cooperative-top-hat-deer.cyclic.app/${selectedFunction}`, {
                 params: {
                     text: inputText,
                     key: 'SFEVNT01339ca4c04bb6011ee08be300a0903e90' // Replace 'yourEncryptionKey' with your actual encryption key
