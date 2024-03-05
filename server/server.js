@@ -6,8 +6,15 @@ const cors = require('cors');
 const app = express();
 
 app.use(express.json());
+// app.use((req, res, next) => {
+//     res.setHeader('Access-Control-Allow-Origin', 'https://encryptionapp.vercel.app');
+//     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+//     res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+//     res.setHeader('Access-Control-Allow-Credentials', 'true');
+//     next();
+// });
 app.use(cors({
-    origin: 'https://encryptionapp.vercel.app/', credentials: true, //access-control-allow-credentials:true
+    origin: 'https://encryptionapp.vercel.app', credentials: true, //access-control-allow-credentials:true
     optionSuccessStatus: 200
 }));
 app.get('/', (req, res) => {
