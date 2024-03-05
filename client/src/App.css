@@ -1,0 +1,60 @@
+/* Overall styling for the app */
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f5f5; /* Light gray background for visual appeal */
+}
+
+/* Styling for the container of the input boxes and button */
+.flex-parent {
+  display: flex;
+  justify-content: space-around; /* Evenly distribute elements */
+  align-items: center;
+  width: 70vw; /* 70% of viewport width */
+  height: 70vh; /* 70% of viewport height */
+  margin-top: 20px; /* Create some space above the container */
+  border: 1px solid #ccc; /* Add a border for visual clarity */
+  padding: 10px; /* Add some padding inside the container */
+  border-radius: 5px; /* Soften the edges of the container */
+}
+
+/* Styling for the input boxes */
+.box {
+  font-family: monospace; /* Monospace font for consistent spacing */
+  width: calc(50% - 10px); /* Calculate width based on half the container minus margin */
+  height: 70%; /* Fixed height as desired */
+  padding: 5px; /* Add padding if needed */
+  margin: 0 5px; /* Adjust margin for spacing */
+  box-sizing: border-box; /* Include padding and border in width/height */
+  border: 1px solid #ccc; /* Add border if desired */
+  border-radius: 5px; /* Add rounded corners if desired */
+  white-space: wrap; /* Enable text wrapping to the next line */
+  overflow-wrap: break-word; /* Allow breaking long words */
+}
+.button {
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Syntax highlighting (optional) */
+.box {
+  .keyword {
+    color: blue;
+  }
+
+  .string {
+    color: green;
+  }
+
+  .comment {
+    color: gray;
+  }
+}
